@@ -2,7 +2,7 @@ pipeline {
   agent none
   stages {
     stage('Patch') {
-       slackSend channel: 'ias', color: '#1e602f', message: "Please visit Jenkins server to approve this Jenkins backup"
+//      slackSend channel: 'ias', color: '#1e602f', message: "Please visit Jenkins server to approve this Jenkins backup"
        input {
         message "Continue to backup Jenkins server?"
         ok "Perform the Backup"
